@@ -111,7 +111,7 @@ Scenario 1: Add an App Shortcut to the Home Screen
 
 **Feature 6: Display Charts Visualizing Event Details:** As a user, I would like to be able to see a chart showing the upcoming events in each city so that I know what events are organized in which city.
 
-Scenario 1: Display Charts Visualizing Event Details 
+Scenario 1: Show a chart with the number of upcoming events in each city.
 - Given the app is opened  
 - When the events are rendered
 - Then charts are rendered showing the number of events per city
