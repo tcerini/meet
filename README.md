@@ -61,7 +61,7 @@ Scenario 3: User can select a city from the suggested list.
 **Feature 2: Show/Hide Event Details:** As a user, I would like to be able to show/hide event details so that I can see more/less
 information about an event. 
 
-Scenario 1: Initially, the event details are hidden.
+Scenario 1: An event element is collapsed by default.
 - Given the user is viewing the list of events
 - When no action is taken on an event
 - Then the event details should be hidden by default 
@@ -72,49 +72,49 @@ Scenario 2: User can expand an event to view its details.
 - Then the detailed information about the event should be displayed 
 
 Scenario 3: User can collapse an event to hide its details.
-- Give the user has expanded an event to view its details
+- Given the user has expanded an event to view its details
 - When the user clicks on the "Hide Details" button of the event
 - Then the event details should be hidden again
 
 **Feature 3: Specify Number of Events:** As a user, I would like to be able to specify the number of events I want to view in the app so
 that I can see more or fewer events in the events list at once.
 
-Scenario 1: When a user hasn't set a number of events to display, show all events  
-- Given user hasn't filtered events by a city
-- When the user is on the home page of events
-- Then a total number of events should be shown 
-
-Scenario 2: When a user has set number of events to display  
+Scenario 1: When user hasn’t specified a number, 32 events are shown by default.
 - Given the user is on the home page of events
-- When the user sets a number in the number of events text box
-- Then the user should see a that number of events in the list
+- When the user hasn't specified the number of events to display
+- Then 32 events should be shown by default
+
+Scenario 2: User can change the number of events displayed.
+- Given the user is on the home page of events
+- When the user changes or sets the number of events to display
+- Then the user should that number of events displayed
 
 **Feature 4: Use the App When Offline:** As a user, I would like to be able to use the app when offline so that I can see the events I
 viewed the last time I was online.
 
-Scenario 1: View cached events when offline  
-- Given I am offline  
-- When I visit the events page  
-- Then I should see the events that were last cached  
+Scenario 1: Show cached data when there’s no internet connection. 
+- Given the user has no internet connection 
+- When the user visits the events page  
+- Then the user should see cached events
 
-Scenario 2: Show error for search setting changes when offline  
-- Given I am offline  
-- When I change the search settings  
-- Then I should see an error message  
+Scenario 2: Show error when user changes search settings (city, number of events)  
+- Given has no internet connection  
+- When the user changes the search settings  
+- Then user should see an error message
 
 **Feature 5: Add an App Shortcut to the Home Screen:** As a user, I would like to be able to add the app shortcut to my home screen so that I can open the app faster.
 
-Scenario 1: Add app shortcut to home screen  
-- Given I am on the homepage of the app  
-- When I choose to add the app to the home screen  
-- Then a shortcut of the app should be added to my device's home screen  
+Scenario 1: Add an App Shortcut to the Home Screen
+- Given the application is diplaying all features
+- When the user selects to add the application to the Home Screen
+- A shortcut to the app should be added to the user's Home Screen  
 
 **Feature 6: Display Charts Visualizing Event Details:** As a user, I would like to be able to see a chart showing the upcoming events in each city so that I know what events are organized in which city.
 
-Scenario 1: Display a chart of events by city  
-- Given I am on the events page  
-- When I look at the events visualization section  
-- Then I should see a chart showing the number of upcoming events in each city  
+Scenario 1: Display Charts Visualizing Event Details 
+- Given the app is opened  
+- When the events are rendered
+- Then charts are rendered showing the number of events per city
 
 
 ### Technical Mandates
