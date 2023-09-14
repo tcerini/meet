@@ -41,12 +41,12 @@ The Meet app is designed to curate events based on city inputs, with data visual
 
 **Feature 1 - Filter Events By City:** As a user, I would like to be able to show/hide event details so that I can see more/less information about an event.
 
-Scenario 1: An event element is collapsed by default.
+Scenario 1: When user hasn’t searched for a city, show upcoming events from all cities.
 - Given the user have just opened the app
 - When the user views the events list
 - Then all events details should be hidden
 
-Scenario 2: User can expand an event to see details.
+Scenario 2: User should see a list of suggestions when they search for a city.
 - Given the user have just opened the app
 - When the user clicks on the "Show Details" button of one of the events
 - Then the event's details should be shown
@@ -104,7 +104,7 @@ Scenario 2: Show error when user changes search settings (city, number of events
 
 **Feature 5: Add an App Shortcut to the Home Screen:** As a user, I would like to be able to add the app shortcut to my home screen so that I can open the app faster.
 
-Scenario 1: Add an App Shortcut to the Home Screen
+Scenario 1: User can install the meet app as a shortcut on their device home screen.
 - Given the application is diplaying all features
 - When the user selects to add the application to the Home Screen
 - A shortcut to the app should be added to the user's Home Screen  
