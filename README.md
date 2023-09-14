@@ -105,7 +105,7 @@ Scenario 2: Show error when user changes search settings (city, number of events
 **Feature 5: Add an App Shortcut to the Home Screen:** As a user, I would like to be able to add the app shortcut to my home screen so that I can open the app faster.
 
 Scenario 1: User can install the meet app as a shortcut on their device home screen.
-- Given the application is diplaying all features
+- Given the application istallation features are functional
 - When the user selects to add the application to the Home Screen
 - A shortcut to the app should be added to the user's Home Screen  
 
