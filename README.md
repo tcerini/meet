@@ -133,3 +133,7 @@ Scenario 1: Show a chart with the number of upcoming events in each city.
 - Data visualization tools integrated
 - Aiming for ≥ 90% test coverage
 - Performance monitoring via online tools
+
+USE OF SERVERLESS FUNCTION IN THE MEET APP
+
+The Meet App can use serverless functions for event notifications, real-time data processing, user authentication, event recommendations, , and scalability. By leveraging serverless technology, the app can efficiently handle backend processes, provide personalized experiences, and scale according to user demand.
