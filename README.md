@@ -93,7 +93,7 @@ Scenario 2: User can change the number of events displayed.
 viewed the last time I was online.
 
 Scenario 1: Show cached data when there’s no internet connection. 
-- Given the user has no internet connection 
+- Given the user has no internet connection
 - When the user visits the events page  
 - Then the user should see cached events
 
