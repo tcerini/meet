@@ -119,4 +119,4 @@ export async function getCalendarEvents(event) {
         body: JSON.stringify(err),
       };
     });
-  }
+}
